@@ -25,7 +25,7 @@ import java.util.List;
 
 @SpringBootTest
 @TestPropertySource(locations = "classpath:application-test.properties")
-class ItemRepositoryTest {
+public class ItemRepositoryTest {
 
     @Autowired
     ItemRepository itemRepository;

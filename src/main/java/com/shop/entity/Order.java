@@ -13,7 +13,7 @@ import java.util.List;
 @Table(name = "orders") // 정렬 order 키워드가 있기 때문에 매핑 테이블 명으로 orders 사용
 @Getter
 @Setter
-public class Order {
+public class Order extends BaseEntity{
 
     @Id
     @GeneratedValue
@@ -39,7 +39,7 @@ public class Order {
             // 고아 객체 제거
     private List<OrderItem> orderItems = new ArrayList<>(); //  하나의 주문이 여러 개의 주문 상품을 갖으므로 List 자료형을 사용해 매핑
 
-    private LocalDateTime regTime;
+//    private LocalDateTime regTime;
 
-    private LocalDateTime updateTime;
+//    private LocalDateTime updateTime;
 }
