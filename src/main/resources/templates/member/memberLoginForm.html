@@ -3,13 +3,11 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layouts/layout1}">
 <!-- 사용자 CSS 추가 -->
-<th:block layout:fragment="css">
     <style>
         .fieldError {
             color: #bd2130;
         }
     </style>
-</th:block>
 <div layout:fragment="content">
 
     <form action="/members/login" role="form" method="post">
